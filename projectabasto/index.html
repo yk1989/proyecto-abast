@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Abasto Refrigeración</title>
+<link href="Style1.css" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700"
+	rel="stylesheet">
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<img class="logo" alt="abastorefrigeracion" src="hvac-nashua-nh.png">
+			<img class="logotext" alt="abastorefri" src="solotituloblanco.png">
+			<a href="local.jpg" target="_blank"><img class="localicon"
+				src="localicon.png"></a>
+			<div id="facebook">
+				<a class="fbtext"
+					href="https://www.facebook.com/abastorefrigeracion/"><img
+					class="fbicon" alt="fabook" src="fbicon.png" target="_blank">
+					Visitanos en Facebook</a>
+			</div>
+			<div id="nav">
+				<a class="button" href="#header">Inicio</a> <a class="button"
+					href="#quienesomos">Quienes somos</a> <a class="button"
+					href="#refrigeracion">Refrigeración</a> <a class="button"
+					href="#aireacondicionado">Aire acondicionado</a> <a class="button"
+					href="#electricidad">Electricidad</a> <a class="button"
+					href="#electrodomesticos">Electrodomésticos</a> <a class="button"
+					href="#contacto">Contáctenos</a>
+
+
+				<!--  <table id="menu">
+					<tr>
+						<td>Inicio</td>
+						<td>Quienes somos</td>
+						<td>Refrigeración</td>
+						<td>Aire acondicionado</td>
+						<td>Electricidad</td>
+						<td>Electrodomésticos</td>
+						<td>Contáctenos</td>
+					</tr>
+				</table>-->
+
+			</div>
+
+			<div id="menu">
+
+				<a href="#header"><img class="logomini" alt=""
+					src="hvac-nashua-nh.png"></a> <img class="logomini1" alt=""
+					src="solotitulonegro.png">
+				<div id="menu1">
+
+
+					<a class="button1" href="#header">Inicio</a> <a class="button1"
+						href="#quienesomos">Quienes somos</a> <a class="button1"
+						href="#refrigeracion">Refrigeración</a> <a class="button1"
+						href="#aireacondicionado">Aire acondicionado</a> <a
+						class="button1" href="#electricidad">Electricidad</a> <a
+						class="button1" href="#electrodomesticos">Electrodomésticos</a> <a
+						class="button1" href="#contacto">Contáctenos</a>
+				</div>
+				<a href="https://www.facebook.com/abastorefrigeracion/"><img
+					class="fbmini" alt="" src="fbiconnegro.png" title="Ir al Facebook!"
+					target="_blank"></a>
+			</div>
+		</div>
+
+
+		<div id="main">
+			<!--  <div id="principal"></div>-->
+			
+			<div id="quienesomos">
+<div id="quienescaja"></div>
+			<div id="quienestexto">
+				<h1>Bienvenidos a Abasto Refrigeracion</h1>
+				<span>asdas dcasdkaslñkcxzvm ,xvprqpiw ouejwqke´ñasd,mnzmcnzxncv</span>
+			</div>
+		</div>
+
+
+		<div id="refrigeracion"><div id=refrigeracionpics></div><div id=refrigeraciontexto></div></div>
+		<div id="aireacondicionado"></div>
+		<div id="electricidad"></div>
+		<div id="electrodomesticos"></div>
+		<div id="contacto"></div>
+	</div>
+
+
+
+
+	<div id="footer"></div>
+
+	</div>
+
+	<!-- El script es para el Slideshow -->
+	>
+	<script type="text/javascript">
+		/*Slideshow*/
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+		}
+	</script>
+</body>
+</html>
